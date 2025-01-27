@@ -1,0 +1,168 @@
+---
+title: "Understanding the Current Data Science and Data Visualization Landscape"
+subtitle: "Overview"
+author: "Jae Jung"
+institute: "Cal Poly Pomona"
+date: "`r format(Sys.Date(), '%B, %d, %Y')`"
+format: 
+  revealjs:
+    theme: default
+    width: 1600
+    height: 900
+    transition: slide
+    transition-speed: default
+    incremental: false
+    toc: true
+    toc-depth: 2
+    slide-number: true
+    scrollable: true
+    code-overflow: wrap
+    code-copy: true
+    code-fold: true
+    number-sections: true
+    number-depth: 5
+    embed-resources: true
+    css: styles.css
+editor: visual
+execute: 
+  echo: false
+  freeze: auto
+---
+
+## Various facets of data science
+
+---
+
+### Components
+- Domain knowledge
+- Statistics/Math
+- Programming
+
+---
+
+### Levels
+- Descriptive Analytics
+- Predictive Analytics
+- Prescriptive Analytics
+
+
+## What is the Role of Visualization?
+
+- Descriptive Analytics
+- Predictive Analytics
+- Prescriptive Analytics
+
+. . .
+
+- Samples
+    - [R Graph Examples](https://r-graph-gallery.com/best-r-chart-examples.html)
+    - [Tableau Gallery](https://www.tableau.com/viz-gallery)
+
+## Popular Tools for Data Wrangling and Visualization 
+
+:::{.incremental}
+-   R
+    -   Base R
+    -   Modern R with Tidyverse
+
+-   Python (Pandas/Numpy/Matplotlib/Seaborn)
+
+-   Julia
+
+-   Tableau
+
+-   Power BI
+
+-   Excel
+:::
+
+## Pros and cons of the popular tools
+
+:::{.highlight-muted}
+-   Modern R with Tidyverse
+
+-   Python (Pandas/Numpy/Matplotlib/Seaborn)
+
+-   Julia
+
+-   Tableau
+
+-   Power BI
+
+-   Excel
+:::
+
+## Why Literate Programming (coding)?
+:::{.incremental}
+-   Reproducibility
+-   Transparency
+-   Ethics
+:::
+
+## Demonstration of data visualization
+
+```{r prep}
+#| output: false
+library(tidyverse)
+library(GGally)
+
+df <- mpg # assigning the data set to a new name
+head(df)
+theme_set(theme_light()) #set the graphics theme to a light style for this R session.
+```
+
+```{r}
+#| echo: fenced
+#| code-fold: false
+#| label: fig-cty-by-cyl-density
+#| fig-cap: The impact of cylinder size on the city mileage using density plot
+#| fig-cap-location: top
+#| output-location: slide
+
+ggplot(df, aes(x = cty)) +
+  geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+  labs(title = "Density Plot",
+       subtitle = "City Mileage Grouped by Number of Cylinders",
+       caption = "Source: mpg dataset",
+       x= "City Mileage",  
+       fill="# Cylinders") 
+```
+
+## Interoperability among multiple languages
+
+-   Language agnostic
+-   IDE:
+    -   RStudio
+        -   Collaborating with colleagues who use a different language, using Quarto
+    -   Positron
+    -   Google Colab
+    -   VS Code,
+    -   Jupyter notebook
+    -   IPython notebook
+
+## Use of AI for data visualization
+
+. . .
+
+::::::{.columns}
+
+::::{.incremental}
+
+:::{.column}
+### Pros
+-   For experienced users, it helps productivity
+-   For beginner, it can be helpful as a tutor
+:::
+
+:::{.column}
+### Cons
+-   It may not give you what you want
+-   For beginner, it can be bad for learning and evaluating codes
+:::
+::::
+
+::::::
+
+## Assignments due next week
+
+-   Spreadsheet Certificate, Due on 2/2
