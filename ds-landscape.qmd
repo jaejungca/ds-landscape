@@ -163,6 +163,6 @@ ggplot(df, aes(x = cty)) +
 
 ::::::
 
-## Assignments due next week
+## Assignments?
 
--   Spreadsheet Certificate, Due on 2/2
+
