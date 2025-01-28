@@ -165,6 +165,13 @@ ggplot(df, aes(x = cty)) +
 :::::
 ::::::
 
+## R vs. Python
+
+-   Pros and Cons?
+-   Rise and Falls of Popular Programming Languages: from 1958 to 2025
+
+    {{< video "https://www.youtube.com/watch?v=ZTPrbAKmcdo" >}}
+
 ## Assignments?
 
 :::{.callout-tip}
