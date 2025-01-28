@@ -31,37 +31,39 @@ execute:
 
 ## Various facets of data science
 
----
+------------------------------------------------------------------------
 
 ### Components
-- Domain knowledge
-- Statistics/Math
-- Programming
 
----
+-   Domain knowledge
+-   Statistics/Math
+-   Programming
+
+------------------------------------------------------------------------
 
 ### Levels
-- Descriptive Analytics
-- Predictive Analytics
-- Prescriptive Analytics
 
+-   Descriptive Analytics
+-   Predictive Analytics
+-   Prescriptive Analytics
 
 ## What is the Role of Visualization?
 
-- Descriptive Analytics
-- Predictive Analytics
-- Prescriptive Analytics
+-   Descriptive Analytics
+-   Predictive Analytics
+-   Prescriptive Analytics
 
 . . .
 
-- Samples
-    - [R Graph Examples](https://r-graph-gallery.com/best-r-chart-examples.html)
-    - [Tableau Gallery](https://www.tableau.com/viz-gallery)
+-   Samples
+    -   [R Graph Examples](https://r-graph-gallery.com/best-r-chart-examples.html)
+    -   [Tableau Gallery](https://www.tableau.com/viz-gallery)
 
-## Popular Tools for Data Wrangling and Visualization 
+## Popular Tools for Data Wrangling and Visualization
 
-:::{.incremental}
+::: incremental
 -   R
+
     -   Base R
     -   Modern R with Tidyverse
 
@@ -78,7 +80,7 @@ execute:
 
 ## Pros and cons of the popular tools
 
-:::{.highlight-muted}
+::: highlight-muted
 -   Modern R with Tidyverse
 
 -   Python (Pandas/Numpy/Matplotlib/Seaborn)
@@ -93,7 +95,8 @@ execute:
 :::
 
 ## Why Literate Programming (coding)?
-:::{.incremental}
+
+::: incremental
 -   Reproducibility
 -   Transparency
 -   Ethics
@@ -144,25 +147,26 @@ ggplot(df, aes(x = cty)) +
 
 . . .
 
-::::::{.columns}
-
-::::{.incremental}
-
-:::{.column}
+:::::: columns
+::::: incremental
+::: column
 ### Pros
+
 -   For experienced users, it helps productivity
 -   For beginner, it can be helpful as a tutor
 :::
 
-:::{.column}
+::: column
 ### Cons
+
 -   It may not give you what you want
 -   For beginner, it can be bad for learning and evaluating codes
 :::
-::::
-
+:::::
 ::::::
 
 ## Assignments?
 
-
+:::{.callout-tip}
+Please refer to the weekly schedule and Canvas.
+:::
